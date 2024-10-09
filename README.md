@@ -1,4 +1,4 @@
-# FastAPI Demo
+# FastAPI demo
 
 In this demo, we deploy a vanilla chemical text classifier as a RESTful API endpoint using
 the Python [FastAPI](https://fastapi.tiangolo.com/) library.
@@ -7,9 +7,7 @@ It takes as input sentences or text chunks and classifies them into `Chemical`, 
 `Physics` labels, or returns their BPE token stream. As classifier, we rely on fine-tuning a
 SciBERT checkpoint from HuggingFace.
 
-## Development instructions
-
-### 1. Set-up Python envinronment
+### 1. Set-up your Python environment
 
 This is the easy part (you can use e.g. Anaconda), follow the next steps:
 - Create new Anaconda environment or simple Python3.10+ virtual environment.
@@ -20,7 +18,7 @@ This is the easy part (you can use e.g. Anaconda), follow the next steps:
 To fine-tune the model used in the demo, run the Jupyter notebook in `notebooks/`. It shouldn't take
 more than a few minutes even on a laptop.
 
-### 3. Run code locally
+### 3. Run your code locally
 
 If you wish to run the code locally, just run the following command in your terminal
 ```bash
@@ -41,7 +39,7 @@ Using in all cases the sentence "The problem of consciousness is one of the most
 
 The application will dynamically determine whether to run the service on a CPU or a GPU depending of the availability of a CUDA-configured GPU on your host machine.
 
-### 4. Build Docker image
+### 4. Build the Docker image
 
 If you have `docker` and `docker-compose` installed on your machine, simply 
 run the following command in your terminal (if you are on Linux):
