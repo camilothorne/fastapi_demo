@@ -39,6 +39,8 @@ curl -X 'GET' 'http://localhost:8000/tokenize/The%20problem%20of%20consciousness
 ```
 Using in all cases the sentence "The problem of consciousness is one of the most important in science." as input.
 
+The application will dynamically determine whether to run the service on a CPU or a GPU depending of the availability of a CUDA-configured GPU on your host machine.
+
 ### 4. Build Docker image
 
 If you have `docker` and `docker-compose` installed on your machine, simply 
